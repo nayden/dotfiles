@@ -125,9 +125,6 @@ set tm=500
 " Enable syntax highlighting
 syntax off
 
-" Add line numbers
-set number
-
 colorscheme desert
 set background=dark
 
