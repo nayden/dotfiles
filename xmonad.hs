@@ -45,6 +45,6 @@ import System.IO
 import System.Exit
 
 main = xmonad defaultConfig
-     { terminal    = "/usr/bin/xterm +sb -sl 10000 -fg 'white' -cr 'green' -ms 'green' -fa 'Monospace' -fs 10"
+     { terminal    = "/usr/bin/xterm -ls +sb -sl 10000 -fg 'white' -cr 'green' -ms 'green' -fa 'Monospace' -fs 10"
      , borderWidth = 3
      }
