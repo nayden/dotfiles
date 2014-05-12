@@ -1,0 +1,12 @@
+import XMonad
+import XMonad.Operations
+ 
+
+import Control.Monad
+import System.IO
+import System.Exit
+
+main = xmonad defaultConfig
+     {  terminal = "/usr/X11R6/bin/xterm -en UTF-8"
+	     ,borderWidth = 3
+     }
