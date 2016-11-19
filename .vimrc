@@ -44,6 +44,7 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
+set nocompatible
 set history=700
 set textwidth=80
 
@@ -64,6 +65,30 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+"
+" Fetch github clone from nayden/vim-easy-align
+Plug 'https://github.com/nayden/vim-easy-align.git'
+
+" On-demand loading
+Plug 'nayden/nerdtree', { 'on':  'NERDTreeToggle' }
+
+Plug 'nayden/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'nayden/vim-go', { 'tag': 'v1.9' }
+"
+" Plugin options
+Plug 'nayden/gocode', { 'tag': 'v.20150303', 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'}
+
+" Add plugins to &runtimepath
+call plug#end()
+
+set path+=**
+set wildmenu
+command! MakeTags !ctags -R .
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -125,6 +150,9 @@ set tm=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable syntax highlighting
 syntax off
+
+colorscheme desert
+set background=light
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -382,3 +410,7 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+set rtp^="/Users/nmarkatc/.opam/system/share/ocp-indent/vim"
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
