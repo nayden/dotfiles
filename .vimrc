@@ -363,8 +363,8 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-noremap <silent> <Leader>r :call mappings#set_numbers()<CR>
-noremap <silent> <Leader>R :call mappings#unset_numbers()<CR>
+noremap <silent> <Leader>r :call SetNumbers()<CR>
+noremap <silent> <Leader>R :call UnsetNumbers()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -406,12 +406,12 @@ function! HasPaste()
 endfunction
 
 " Setting and unsetting numbers
-function! mappings#set_numbers() abort
+function! SetNumbers() abort
 	set number
 	set relativenumber
 endfunction
 
-function! mappings#unset_numbers() abort
+function! UnsetNumbers() abort
 	set nonumber
 	set norelativenumber
 endfunction
