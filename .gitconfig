@@ -1,9 +1,0 @@
-[user]
-	email = nayden@gmail.com
-	name = Nayden Markatchev
-[core]
-	editor = vim
-	whitespace = fix,trailing-space,cr-at-eol
-	excludesfile = ~/.gitignore
-[push]
-	default = simple
