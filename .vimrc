@@ -47,6 +47,7 @@
 set nocompatible
 set history=700
 set textwidth=80
+set columns=80
 
 " Setting cursor color
 if &term =~ "xterm\\|rxvt"
@@ -169,10 +170,10 @@ set tm=500
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Disable syntax highlighting
-syntax off
+syntax on
 
-colorscheme desert
-set background=light
+colorscheme industry
+"set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
