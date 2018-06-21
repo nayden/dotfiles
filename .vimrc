@@ -46,8 +46,9 @@
 " Sets how many lines of history VIM has to remember
 set nocompatible
 set history=700
-set textwidth=80
-set columns=80
+set textwidth=72
+set columns=72
+let &colorcolumn=join(range(73,73),",")
 
 " Setting cursor color
 if &term =~ "xterm\\|rxvt"
@@ -98,9 +99,16 @@ Plug 'scrooloose/syntastic'
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'nayden/vim-go', { 'tag': 'v1.9' }
-"
+
+" GraphQL
+Plug 'jparise/vim-graphql'
+
 " Plugin options
-Plug 'nayden/gocode', { 'tag': 'v.20150303', 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'}
+Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
+
+" toml
+
+Plug 'cespare/vim-toml'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -197,7 +205,7 @@ set noswapfile
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 8 spaces
+" 1 tab == 2 spaces
 set shiftwidth=8
 set tabstop=8
 
