@@ -98,7 +98,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'nayden/vim-go', { 'tag': 'v1.9' }
+Plug 'nayden/vim-go'
 
 " GraphQL
 Plug 'jparise/vim-graphql'
@@ -180,7 +180,8 @@ set tm=500
 " Disable syntax highlighting
 syntax on
 
-colorscheme industry
+" colorscheme industry
+colorscheme torte
 "set background=dark
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -206,8 +207,9 @@ set noswapfile
 set smarttab
 
 " 1 tab == 2 spaces
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=2
+set tabstop=2
+set expandtab
 
 " Linebreak on 500 characters
 set lbr
@@ -452,9 +454,13 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
-set rtp^="/Users/nmarkatc/.opam/system/share/ocp-indent/vim"
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+" Load multiple files https://vim.fandom.com/wiki/Load_multiple_files_with_a_single_command
+com! -complete=file -nargs=* Edit silent! exec "!vim --servername " . v:servername . " --remote-silent <args>"
+
+"set rtp^="/Users/nmarkatc/.opam/system/share/ocp-indent/vim"
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 "augroup vimrc_autocmd
 "	autocmd BufEnter * highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
