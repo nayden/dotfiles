@@ -46,9 +46,9 @@
 " Sets how many lines of history VIM has to remember
 set nocompatible
 set history=700
-set textwidth=72
-set columns=72
-let &colorcolumn=join(range(73,73),",")
+set textwidth=80
+set columns=80
+let &colorcolumn=join(range(81,81),",")
 
 " Setting cursor color
 if &term =~ "xterm\\|rxvt"
@@ -87,9 +87,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/nayden/vim-easy-align.git'
 
 " On-demand loading
-Plug 'nayden/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
-Plug 'nayden/YCM-Generator', { 'branch': 'stable' }
+Plug '/YCM-Generator', { 'branch': 'stable' }
 
 " Git plugin G+command
 Plug 'tpope/vim-fugitive'
@@ -98,7 +98,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'nayden/vim-go'
+Plug 'fatih/vim-go'
+
+" Rust plugin
+Plug 'rust-lang/rust.vim'
 
 " GraphQL
 Plug 'jparise/vim-graphql'
@@ -107,8 +110,10 @@ Plug 'jparise/vim-graphql'
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 
 " toml
-
 Plug 'cespare/vim-toml'
+
+" Ruby plugin
+Plug 'vim-ruby/vim-ruby'
 
 " Add plugins to &runtimepath
 call plug#end()
