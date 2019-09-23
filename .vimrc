@@ -103,6 +103,9 @@ Plug 'fatih/vim-go'
 " Rust plugin
 Plug 'rust-lang/rust.vim'
 
+" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support
+Plug 'w0rp/ale'
+
 " GraphQL
 Plug 'jparise/vim-graphql'
 
