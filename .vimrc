@@ -462,7 +462,7 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
-
+call SetNumbers()
 " Load multiple files https://vim.fandom.com/wiki/Load_multiple_files_with_a_single_command
 com! -complete=file -nargs=* Edit silent! exec "!vim --servername " . v:servername . " --remote-silent <args>"
 
