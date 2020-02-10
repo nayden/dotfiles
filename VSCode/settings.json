@@ -1,0 +1,41 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.iconTheme": null,
+    "terminal.external.osxExec": "iterm2.app",
+    "vim.leader": ",",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.experimentalRefreshOnResume": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.currentLine.format": "                          ${author}, ${agoOrDate} • ${message}",
+    "gitlens.hovers.enabled": false,
+    "files.autoSave": "onFocusChange",
+    "gitlens.hovers.currentLine.changes": false,
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "window.zoomLevel": 0,
+    "editor.renderIndentGuides": true,
+    "editor.rulers": [
+        79,
+        120
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "editor.fontSize": 13,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.jediEnabled": false,
+    "files.autoSaveDelay": 100,
+    "gitblame.ignoreWhitespace": true,
+    "calva.paredit.defaultKeyMap": "original",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
+}
