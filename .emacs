@@ -8,7 +8,9 @@
 (package-initialize)
 
 ; set the Windows key as meta
-(setq x-super-keysym 'meta)
+; (setq x-super-keysym 'meta)
+(global-set-key (kbd "M-o") 'ace-window)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -16,8 +18,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (linum-relative nlinum gist git git-annex git-attr git-auto-commit-mode git-command git-commit git-commit-insert-issue github-clone go-autocomplete go-mode go-rename go-scratch go-tag ## ag markdown-mode org-evil evil))))
+   '(company cider-hydra ace-window clojure-essential-ref flycheck-clojure flycheck projectile ivy undo-tree cider linum-relative nlinum gist git git-annex git-attr git-auto-commit-mode git-command git-commit git-commit-insert-issue github-clone go-autocomplete go-mode go-rename go-scratch go-tag ## ag markdown-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -25,8 +26,8 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'evil)
-(evil-mode 1)
+;;(require 'evil)
+;;(evil-mode 1)
 
 ;; Preset `nlinum-format` for minimum width.
 ;;(defun my-nlinum-mode-hook ()
