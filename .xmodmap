@@ -8,3 +8,12 @@ keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 
+!
+! Swap Alt and Windows keys
+!
+remove mod1 = Alt_L Alt_R Meta_L
+remove mod4 = Super_L Super_R Super_L Hyper_L
+keysym Meta_L = Super_L Super_R Super_L Hyper_L
+keysym Super_L = Alt_L Alt_R Meta_L
+add mod4 = Alt_L Alt_R Meta_L
+add mod1 = Super_L Super_R Super_L Hyper_L
