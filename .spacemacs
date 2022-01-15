@@ -565,7 +565,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("c922982d3cabc45a262d32eab64e0dc8f12c054f82e8d44c104a01a946181dab" default))
+   '("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "c922982d3cabc45a262d32eab64e0dc8f12c054f82e8d44c104a01a946181dab" default))
  '(evil-want-Y-yank-to-eol nil)
  '(helm-completion-style 'helm)
  '(package-selected-packages
