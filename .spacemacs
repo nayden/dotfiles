@@ -46,6 +46,7 @@ This function should only modify configuration layer settings."
      tabs
      go
      ruby
+     python
      helm
      html
      c-c++
@@ -568,8 +569,26 @@ This function is called at the very end of Spacemacs initialization."
    '("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "c922982d3cabc45a262d32eab64e0dc8f12c054f82e8d44c104a01a946181dab" default))
  '(evil-want-Y-yank-to-eol nil)
  '(helm-completion-style 'helm)
+ '(hl-todo-keyword-faces
+   '(("TODO" . "#dc752f")
+     ("NEXT" . "#dc752f")
+     ("THEM" . "#2aa198")
+     ("PROG" . "#268bd2")
+     ("OKAY" . "#268bd2")
+     ("DONT" . "#d70008")
+     ("FAIL" . "#d70008")
+     ("DONE" . "#00af00")
+     ("NOTE" . "#875f00")
+     ("KLUDGE" . "#875f00")
+     ("HACK" . "#875f00")
+     ("TEMP" . "#875f00")
+     ("FIXME" . "#dc752f")
+     ("XXX+" . "#dc752f")
+     ("\\?\\?\\?+" . "#dc752f")))
+ '(org-fontify-done-headline nil)
+ '(org-fontify-todo-headline nil)
  '(package-selected-packages
-   '(grip-mode github-search github-clone gh marshal logito pcache centaur-tabs web-mode web-beautify tagedit slim-mode scss-mode sass-mode pug-mode impatient-mode simple-httpd helm-rtags helm-css-scss haml-mode google-c-style gendoxy flycheck-ycmd flycheck-rtags emmet-mode disaster cpp-auto-include company-ycmd ycmd request-deferred deferred company-web web-completion-data company-rtags rtags company-c-headers ccls zenburn-theme solarized-theme prettier-js dap-mode bui yasnippet-snippets xterm-color ws-butler writeroom-mode winum which-key vterm volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired toc-org terminal-here symon symbol-overlay string-inflection string-edit spaceline-all-the-icons smeargle shell-pop seeing-is-believing rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocopfmt rubocop rspec-mode robe restart-emacs request rbenv rake rainbow-delimiters quickrun popwin password-generator paradox overseer orgit-forge org-superstar org-rich-yank org-projectile org-present org-pomodoro org-mime org-download org-contrib org-cliplink open-junk-file nameless mwim multi-term multi-line mmm-mode minitest markdown-toc macrostep lsp-ui lsp-treemacs lsp-origami lorem-ipsum link-hint inspector info+ indent-guide hybrid-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org-rifle helm-org helm-mode-manager helm-make helm-lsp helm-ls-git helm-git-grep helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gnuplot gitignore-templates git-timemachine git-modes git-messenger git-link git-gutter-fringe gh-md fuzzy font-lock+ flyspell-correct-helm flycheck-pos-tip flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emr elisp-slime-nav editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish define-word company-go column-enforce-mode clean-aindent-mode chruby centered-cursor-mode bundler browse-at-remote auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
+   '(yapfify sphinx-doc pytest pyenv-mode pydoc py-isort poetry pippel pipenv pyvenv pip-requirements nose lsp-python-ms lsp-pyright live-py-mode importmagic epc ctable concurrent helm-pydoc cython-mode company-anaconda blacken anaconda-mode pythonic grip-mode github-search github-clone gh marshal logito pcache centaur-tabs web-mode web-beautify tagedit slim-mode scss-mode sass-mode pug-mode impatient-mode simple-httpd helm-rtags helm-css-scss haml-mode google-c-style gendoxy flycheck-ycmd flycheck-rtags emmet-mode disaster cpp-auto-include company-ycmd ycmd request-deferred deferred company-web web-completion-data company-rtags rtags company-c-headers ccls zenburn-theme solarized-theme prettier-js dap-mode bui yasnippet-snippets xterm-color ws-butler writeroom-mode winum which-key vterm volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired toc-org terminal-here symon symbol-overlay string-inflection string-edit spaceline-all-the-icons smeargle shell-pop seeing-is-believing rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocopfmt rubocop rspec-mode robe restart-emacs request rbenv rake rainbow-delimiters quickrun popwin password-generator paradox overseer orgit-forge org-superstar org-rich-yank org-projectile org-present org-pomodoro org-mime org-download org-contrib org-cliplink open-junk-file nameless mwim multi-term multi-line mmm-mode minitest markdown-toc macrostep lsp-ui lsp-treemacs lsp-origami lorem-ipsum link-hint inspector info+ indent-guide hybrid-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org-rifle helm-org helm-mode-manager helm-make helm-lsp helm-ls-git helm-git-grep helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gnuplot gitignore-templates git-timemachine git-modes git-messenger git-link git-gutter-fringe gh-md fuzzy font-lock+ flyspell-correct-helm flycheck-pos-tip flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emr elisp-slime-nav editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish define-word company-go column-enforce-mode clean-aindent-mode chruby centered-cursor-mode bundler browse-at-remote auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
