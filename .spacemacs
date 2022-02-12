@@ -52,6 +52,7 @@ This function should only modify configuration layer settings."
      helm
      html
      c-c++
+     clojure
      lsp
      markdown
      multiple-cursors
