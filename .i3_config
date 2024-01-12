@@ -1,0 +1,6 @@
+font pango:DejaVu Sans Mono 8
+# use Mouse+Mod1 to drag floating windows to their wanted position
+floating_modifier Mod1
+
+# start a terminal
+bindsym Mod1+Return exec /usr/X11R6/bin/xterm -bg gray2 -fg gray92 +sb -cr yellow3 -ls /usr/local/bin/fish

@@ -1,7 +1,7 @@
 # Configuration for dwm
-/usr/local/bin/dstat iwm0 &
-/usr/X11R6/bin/xmodmap ${HOME}/.xmodmap
-exec /usr/local/bin/dwm
+#/usr/local/bin/dstat iwm0 &
+#/usr/X11R6/bin/xmodmap ${HOME}/.xmodmap
+#exec /usr/local/bin/dwm
 
 # Configuration for i3
 # Disable DPMS turning off the screen

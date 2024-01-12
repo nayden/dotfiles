@@ -1,0 +1,12 @@
+xterm*faceName: terminus:pixelsize=22
+xterm.vt100.saveLines: 8192
+xterm*utf8: true
+xterm*background:   black
+xterm*foreground:   white
+XConsole*background:    #111111
+XConsole*foreground:    #dccbba
+Xconsole*faceName: terminus:pixelsize=18
+XConsole.verbose: true
+
+XTerm*metaSendsEscape: true
+XTerm*eightBitInput: false
