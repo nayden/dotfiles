@@ -8,6 +8,7 @@ keysym Caps_Lock = Control_L
 add Lock = Caps_Lock
 add Control = Control_L
 
+
 !
 ! Swap Alt and Windows keys
 ! this is buggy and doesn't work with emacs
@@ -16,8 +17,8 @@ add Control = Control_L
 !keysym Meta_L = Super_L Super_R Hyper_L
 !keysym Alt_L = Super_L Super_R Hyper_L
 !keysym Super_L = Alt_L Alt_R Meta_L
-!add mod4 = Alt_L Meta_L
-!add mod1 = Super_L Hyper_L
+!add mod4 = Alt_L Alt_R Meta_L
+!add mod1 = Super_R Super_L Hyper_L
 
 !This is an experiment that didn't work out
 !remove mod1 = Alt_L
