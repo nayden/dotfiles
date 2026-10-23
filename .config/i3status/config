@@ -34,7 +34,7 @@ cpu_temperature acpitz0 {
 }
 
 
-wireless iwn0 {
+wireless iwm0 {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
 }
